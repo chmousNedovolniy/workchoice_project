@@ -1,0 +1,49 @@
+\ProvidesPackage{packages}
+
+% Vital style packages
+\RequirePackage[T1,T2A]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[english,russian]{babel}
+\RequirePackage[left=2cm,right=2cm, top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+
+% Math packages
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsfonts}
+\RequirePackage{amsthm}
+
+% Graphics packages
+
+\RequirePackage{graphicx}
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.png,.jpg}
+\RequirePackage{amscd}                
+\RequirePackage{multirow}
+\RequirePackage[matrix,arrow,curve]{xy}
+
+% Other packages
+\setcounter{MaxMatrixCols}{20}
+\RequirePackage[nottoc,numbib]{tocbibind}
+\RequirePackage{paralist}
+\RequirePackage{enumitem}
+
+\RequirePackage[colorlinks=true, urlcolor=blue, citecolor=black]{hyperref}
+\RequirePackage{titletoc}
+\RequirePackage{array}
+\RequirePackage{float}
+\RequirePackage{subcaption}
+\RequirePackage{multicol}
+\RequirePackage{lipsum}
+\RequirePackage{mwe}
+\RequirePackage{url}
+\RequirePackage{booktabs}
+\RequirePackage{longtable}
+\RequirePackage{lipsum}
+
+\newenvironment{nohyphens}{%
+  \par
+  \hyphenpenalty=10000
+  \exhyphenpenalty=10000
+  \sloppy % Makes TeX obey margins by stretching inter word spaces
+}{\par}
+\RequirePackage{ragged2e}
